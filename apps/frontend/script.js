@@ -33,7 +33,7 @@ function checkNetwork(chainId) {
         networkText.innerText = "Avalanche Fuji";
         networkText.className = "net-valid";
     } else {
-        networkText.innerText = "❌ Wrong Network";
+        networkText.innerText = "Wrong Network";
         networkText.className = "net-invalid";
     }
 }
