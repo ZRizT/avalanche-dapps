@@ -6,22 +6,43 @@
     <title>Avalanche Wallet Connect</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <!DOCTYPE html>
+
+<body>
     <div class="container">
-      <h1>❄️ Avalanche dApp</h1>
-      <p class="subtitle">Connect Wallet (Core Wallet)</p>
+        <h1>Avalanche dApp</h1>
+        
+        <div class="card">
+            <div class="info-row">
+                <span>Status Koneksi:</span>
+                <span id="connection-status" class="badge disconnected">Disconnected</span>
+            </div>
+            
+            <div class="info-row">
+                <span>Network:</span>
+                <span id="network-name">-</span>
+            </div>
 
-      <button id="connectBtn">Connect Wallet</button>
+            <div class="info-row">
+                <span>Address:</span>
+                <span id="wallet-address" class="mono">-</span>
+            </div>
 
-      <div class="card">
-        <p><strong>Status:</strong> <span id="status">Not Connected</span></p>
-        <p><strong>Wallet Address:</strong></p>
-        <p id="address">-</p>
-        <p><strong>Network:</strong> <span id="network">-</span></p>
-        <p><strong>Balance:</strong> <span id="balance">-</span> AVAX</p>
-      </div>
+            <div class="info-row">
+                <span>Balance:</span>
+                <span id="wallet-balance" class="mono">-</span>
+            </div>
+        </div>
+
+        <button id="connect-btn">Connect Core Wallet</button>
+
+        <div class="footer-identity">
+            <p>Peserta Short Course:</p>
+            <h3>Rizki Ramadani</h3>
+            <p>NIM: 241011400098</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
