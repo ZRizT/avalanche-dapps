@@ -1,23 +1,30 @@
 {
-  "name": "contracts",
+  "name": "avalanche-dapps",
   "version": "1.0.0",
-  "description": "smart contracts",
+  "description": "Short course ini dirancang untuk membantu peserta **membangun Full Stack dApp sederhana di jaringan Avalanche** dari nol hingga deployment, menggunakan **1 template project yang sama selama 5 hari**.",
   "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZRizT/avalanche-dapps.git#main"
+    "url": "git+https://github.com/ZRizT/avalanche-dapps.git"
   },
   "keywords": [],
-  "author": "Rizki Ramadani",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "corepack": "^0.34.5",
-    "dotenv": "^17.2.3"
+  "bugs": {
+    "url": "https://github.com/ZRizT/avalanche-dapps/issues"
   },
+  "homepage": "https://github.com/ZRizT/avalanche-dapps#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
