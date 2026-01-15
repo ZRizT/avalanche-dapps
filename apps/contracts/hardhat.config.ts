@@ -1,13 +1,22 @@
-import { task, type HardhatUserConfig } from "hardhat/config";
+import { type HardhatUserConfig, task } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox-viem";
+import * as dotenv from "dotenv";
 
-import { USER_PRIVATE_KEY } from "./helpers/constants/deployment";
+dotenv.config();
+
+// --- PENGAMAN ---
+// Kode ini mencegah Hardhat Crash (HHE15) kalau PRIVATE_KEY kosong/undefined
+const deployerKey = process.env.PRIVATE_KEY;
+// Jika key ada isinya, masukkan ke array. Jika tidak, kosongkan.
+const accounts = (deployerKey && deployerKey.trim().length > 0) 
+  ? [deployerKey] 
+  : [];
+// ----------------
 
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.28",
     settings: {
-      evmVersion: "shanghai",
       optimizer: {
         enabled: true,
         runs: 1000,
@@ -18,26 +27,21 @@ const config: HardhatUserConfig = {
     avalancheFuji: {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
       chainId: 43113,
-      accounts: [USER_PRIVATE_KEY],
+      accounts: accounts, // Gunakan variabel yang sudah diamankan
     },
   },
   etherscan: {
-    // Your API key for Etherscan
-    // Obtain one at https://etherscan.io/
-    // apiKey: ETHERSCAN_API,
-    // apiKey: {
-    //   avalancheFuji: process.env.SNOWTRACE_API_KEY
-    // }
+    apiKey: {
+      avalancheFujiTestnet: process.env.SNOWTRACE_API_KEY || "",
+    },
   },
   sourcify: {
-    // Disabled by default
-    // Doesn't need an API key
     enabled: true,
   },
 };
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
-  const accounts = await hre.viem.getWalletClients();
+  const accounts = await hre.viem.getWalletClients(); 
   for (const account of accounts) {
     console.log(account.account.address);
   }
