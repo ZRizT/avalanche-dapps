@@ -5,7 +5,7 @@ import { USER_PRIVATE_KEY } from "./helpers/constants/deployment";
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.28",
+    version: "0.8.27",
     settings: {
       evmVersion: "shanghai",
       optimizer: {
@@ -25,9 +25,9 @@ const config: HardhatUserConfig = {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
     // apiKey: ETHERSCAN_API,
-    // apiKey: {
-    //   avalancheFuji: process.env.SNOWTRACE_API_KEY
-    // }
+    apiKey: {
+      avalancheFuji: process.env.SNOWTRACE_API_KEY
+    }
   },
   sourcify: {
     // Disabled by default
