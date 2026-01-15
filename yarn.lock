@@ -5,6 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"22@npm:^0.0.0":
+  version: 0.0.0
+  resolution: "22@npm:0.0.0"
+  checksum: 10c0/73942bedf002b3623d7019fea34a21cfcf9780be0d405c7aeb8fc59cb4a1332e011e9dcc9ba87cdb67c3b9465adde9fbe23c35c2504b2580fa9eada400e84f91
+  languageName: node
+  linkType: hard
+
 "@adraffy/ens-normalize@npm:1.10.1":
   version: 1.10.1
   resolution: "@adraffy/ens-normalize@npm:1.10.1"
@@ -1064,7 +1071,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=22.0.0":
+"@types/node@npm:*, @types/node@npm:>=22.0.0, @types/node@npm:^25.0.8":
   version: 25.0.8
   resolution: "@types/node@npm:25.0.8"
   dependencies:
@@ -2033,6 +2040,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "contracts@workspace:apps/contracts"
   dependencies:
+    22: "npm:^0.0.0"
     "@nomicfoundation/hardhat-ignition": "npm:^0.15.0"
     "@nomicfoundation/hardhat-ignition-viem": "npm:^0.15.0"
     "@nomicfoundation/hardhat-network-helpers": "npm:^1.0.0"
@@ -2042,12 +2050,13 @@ __metadata:
     "@types/chai": "npm:^4.2.0"
     "@types/chai-as-promised": "npm:^7.1.6"
     "@types/mocha": "npm:>=9.1.0"
-    "@types/node": "npm:>=22.0.0"
+    "@types/node": "npm:^25.0.8"
     chai: "npm:^4.2.0"
     corepack: "npm:^0.34.5"
     dotenv: "npm:^17.2.3"
     hardhat: "npm:^2.14.0"
     hardhat-gas-reporter: "npm:^2.3.0"
+    nvm: "npm:^0.0.4"
     solidity-coverage: "npm:^0.8.0"
     ts-node: "npm:>=8.0.0"
     typescript: "npm:~5.0.4"
@@ -4237,6 +4246,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nvm@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "nvm@npm:0.0.4"
+  bin:
+    nvm: ./bin/nvm
+  checksum: 10c0/7e1f3595a637e406e5badb2a636410ab374f9274cc8830567f8226ea3aa517523a88fdb9c4d3197505552ec8fe663e4ba1508d6d853ba1edbc6a31ac20f8ca40
+  languageName: node
+  linkType: hard
+
 "obliterator@npm:^2.0.0":
   version: 2.0.5
   resolution: "obliterator@npm:2.0.5"
@@ -5692,8 +5710,8 @@ __metadata:
   linkType: hard
 
 "which-typed-array@npm:^1.1.16":
-  version: 1.1.19
-  resolution: "which-typed-array@npm:1.1.19"
+  version: 1.1.20
+  resolution: "which-typed-array@npm:1.1.20"
   dependencies:
     available-typed-arrays: "npm:^1.0.7"
     call-bind: "npm:^1.0.8"
@@ -5702,7 +5720,7 @@ __metadata:
     get-proto: "npm:^1.0.1"
     gopd: "npm:^1.2.0"
     has-tostringtag: "npm:^1.0.2"
-  checksum: 10c0/702b5dc878addafe6c6300c3d0af5983b175c75fcb4f2a72dfc3dd38d93cf9e89581e4b29c854b16ea37e50a7d7fca5ae42ece5c273d8060dcd603b2404bbb3f
+  checksum: 10c0/16fcdada95c8afb821cd1117f0ab50b4d8551677ac08187f21d4e444530913c9ffd2dac634f0c1183345f96344b69280f40f9a8bc52164ef409e555567c2604b
   languageName: node
   linkType: hard
 
