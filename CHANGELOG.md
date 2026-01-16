@@ -45,8 +45,21 @@ Meskipun terkendala waktu, seluruh *objective* tugas berhasil diselesaikan dan d
     * **Contract Address:** `0xb0ab403026f463972f9af3538f2b17faaacf081b`
     * Script `interact.ts` berhasil diperbarui menggunakan library **Viem** untuk interaksi Read/Write ke Fuji Testnet.
 
-### Lampiran:
+### Lampiran Day2:
 <img width="937" height="478" alt="Screenshot_20260116_013833" src="https://github.com/user-attachments/assets/5d9c4077-07ee-455b-802b-4938d228bc04" />
 <img width="937" height="793" alt="Screenshot_20260116_013852" src="https://github.com/user-attachments/assets/8a78cdd7-a2e0-4c97-b17f-6e91991ae21f" />
 <img width="841" height="359" alt="Screenshot_20260116_013809" src="https://github.com/user-attachments/assets/80f4d0e6-7d86-445c-9ad2-b5bc8e6b7bf7" />
 
+---
+
+## 🎨 Day 3: Frontend Integration (Next.js + Wagmi)
+Status: **COMPLETED**
+* Inisialisasi project Next.js (App Router) di dalam monorepo `apps/frontend`.
+* Integrasi **Wagmi & Viem** untuk koneksi wallet (Core/Injected).
+* Implementasi **Read Contract** (mengambil data angka & string nama/NIM).
+* Implementasi **Write Contract** (mengubah state blockchain).
+* **UX Improvements:**
+  * Menangani status Loading/Success transaksi.
+  * Auto-refresh data setelah transaksi terkonfirmasi.
+  * Tampilan UI Minimalis & Dark Mode.
+  * Error handling jika user reject transaksi.

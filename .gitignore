@@ -23,3 +23,5 @@ hardhat-network.json
 Thumbs.db
 
 .yarn
+
+apps/frontend/.next
