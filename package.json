@@ -28,5 +28,12 @@
     "@types/node": ">=18.0.0",
     "ts-node": ">=8.0.0",
     "typescript": "~5.0.4"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.10",
+    "@tanstack/react-query": "^5.90.18",
+    "@walletconnect/ethereum-provider": "^2.23.3",
+    "viem": "^2.44.4",
+    "wagmi": "^3.3.2"
   }
 }
