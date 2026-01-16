@@ -67,7 +67,9 @@ Status: **COMPLETED**
 ---
 
 ### Lampiran Day1:
-<img width="1026" height="977" alt="Screenshot_20260116_224437" src="https://github.com/user-attachments/assets/6bde554a-1c34-47cb-a377-905852aafe10" />
-<img width="1264" height="977" alt="Screenshot_20260116_224419" src="https://github.com/user-attachments/assets/ec21120b-a510-465d-944a-39c6943d3ef7" />
-<img width="1264" height="977" alt="Screenshot_20260116_223551" src="https://github.com/user-attachments/assets/6742601a-d0a2-463e-aa7b-7a09d84b0cf6" />
+<img width="1261" height="974" alt="Screenshot_20260116_230441" src="https://github.com/user-attachments/assets/6c86cad8-be1c-4756-82d7-2c506bcf7a9a" />
+<img width="1261" height="974" alt="Screenshot_20260116_230126" src="https://github.com/user-attachments/assets/00b6c299-13c6-4078-a343-16b2473c6a90" />
+<img width="1261" height="974" alt="Screenshot_20260116_230238" src="https://github.com/user-attachments/assets/c0bef80d-61ef-4fa0-aee1-558beef50607" />
+<img width="1261" height="974" alt="Screenshot_20260116_230311" src="https://github.com/user-attachments/assets/16184f5e-5e1a-445e-9d10-811eae7721ab" />
+<img width="1261" height="974" alt="Screenshot_20260116_230402" src="https://github.com/user-attachments/assets/64097fdd-de33-48bd-b2ee-b5bd522018a5" />
 
