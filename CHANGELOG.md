@@ -63,3 +63,11 @@ Status: **COMPLETED**
   * Auto-refresh data setelah transaksi terkonfirmasi.
   * Tampilan UI Minimalis & Dark Mode.
   * Error handling jika user reject transaksi.
+
+---
+
+### Lampiran Day1:
+<img width="1026" height="977" alt="Screenshot_20260116_224437" src="https://github.com/user-attachments/assets/6bde554a-1c34-47cb-a377-905852aafe10" />
+<img width="1264" height="977" alt="Screenshot_20260116_224419" src="https://github.com/user-attachments/assets/ec21120b-a510-465d-944a-39c6943d3ef7" />
+<img width="1264" height="977" alt="Screenshot_20260116_223551" src="https://github.com/user-attachments/assets/6742601a-d0a2-463e-aa7b-7a09d84b0cf6" />
+
