@@ -492,7 +492,7 @@ const SIMPLE_STORAGE_ABI = [
 
 export default function Page() {
   // ==============================
-  // 🔹 WALLET STATE
+  // 🔹 WALLET STAT
   // ==============================
   const { address, isConnected } = useAccount();
   const { connect, isPending: isConnecting } = useConnect();
