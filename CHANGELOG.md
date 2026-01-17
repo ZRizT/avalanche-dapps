@@ -29,7 +29,7 @@ Selama pengerjaan Day 2, terjadi kendala teknis yang memakan waktu cukup lama un
 * Awalnya saya menduga banyak modul Node.js/Hardhat tidak kompatibel dengan environment Linux (Arch Linux) saya karena banyaknya error `file not found` dan `module resolution`.
 * **Koreksi:** Setelah debugging, isu tersebut murni kesalahan konfigurasi saya dalam menangani struktur **Monorepo/Workspaces** dan versi library, bukan masalah OS.
 
-### Day 2 Task Completion Results
+## Day 2 Task Completion Results
 Meskipun terkendala waktu, seluruh *objective* tugas berhasil diselesaikan dan divalidasi:
 
 1.  **Task 1 & 4 (Ownership & Custom State):**
@@ -66,10 +66,23 @@ Status: **COMPLETED**
 
 ---
 
-### Lampiran Day1:
+### Lampiran Day3:
 <img width="1261" height="974" alt="Screenshot_20260116_230441" src="https://github.com/user-attachments/assets/6c86cad8-be1c-4756-82d7-2c506bcf7a9a" />
 <img width="1261" height="974" alt="Screenshot_20260116_230126" src="https://github.com/user-attachments/assets/00b6c299-13c6-4078-a343-16b2473c6a90" />
 <img width="1261" height="974" alt="Screenshot_20260116_230238" src="https://github.com/user-attachments/assets/c0bef80d-61ef-4fa0-aee1-558beef50607" />
 <img width="1261" height="974" alt="Screenshot_20260116_230311" src="https://github.com/user-attachments/assets/16184f5e-5e1a-445e-9d10-811eae7721ab" />
 <img width="1261" height="974" alt="Screenshot_20260116_230402" src="https://github.com/user-attachments/assets/64097fdd-de33-48bd-b2ee-b5bd522018a5" />
 
+
+## Day 4: Backend API (NestJS + Viem)
+Status: **COMPLETED**
+* Inisialisasi project Backend dengan **NestJS**.
+* Integrasi library **Viem** untuk membaca data dari Smart Contract.
+* **API Endpoints:**
+  * `GET /blockchain/value`: Membaca state angka (`uint256`).
+  * `GET /blockchain/identity`: Membaca state teks (`string` - Nama/NIM).
+  * `GET /blockchain/events`: Menampilkan history transaksi dengan formatting JSON yang rapi.
+* **Improvements & Fixes:**
+  * Mengatasi isu **RPC Timeout/Rate Limit** dengan berpindah ke `PublicNode` RPC.
+  * Mengoptimalkan query `getLogs` dengan membatasi range blok (2000 blok terakhir) agar performa ringan.
+  * Menambahkan **Swagger UI (OpenAPI)** untuk dokumentasi API yang interaktif.
