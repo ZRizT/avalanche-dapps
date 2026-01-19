@@ -86,3 +86,24 @@ Status: **COMPLETED**
   * Mengatasi isu **RPC Timeout/Rate Limit** dengan berpindah ke `PublicNode` RPC.
   * Mengoptimalkan query `getLogs` dengan membatasi range blok (2000 blok terakhir) agar performa ringan.
   * Menambahkan **Swagger UI (OpenAPI)** untuk dokumentasi API yang interaktif.
+
+
+## Day 5: Full Stack Deployment & Final Integration
+**Status: COMPLETED**
+
+### Features & Integration
+* **End-to-End Architecture:** Mengintegrasikan Frontend dengan Backend API untuk proses *Read Data* (menghindari direct RPC call dari client) dan Wallet Connection untuk *Write Data*.
+* **Service Layer:** Implementasi `blockchain.service.ts` pada Frontend untuk standardisasi request ke Backend.
+* **Production Config:** Konfigurasi Environment Variables (`NEXT_PUBLIC_BACKEND_URL`) untuk memisahkan environment Local dan Production.
+
+### Deployment
+* **Backend:** Berhasil dideploy ke **Railway**.
+    * *Config:* Root Directory `apps/backend`.
+    * *Fix:* Menggunakan `.npmrc` untuk handling dependency conflict.
+* **Frontend:** Berhasil dideploy ke **Vercel**.
+    * *Config:* Root Directory `apps/frontend/my-app`.
+    * *Fix:* Instalasi eksplisit library Web3 di level workspace frontend.
+
+### Technical Fixes
+* **Dependency Resolution:** Menyelesaikan konflik versi `wagmi` dan `typescript` menggunakan strategi `legacy-peer-deps`.
+* **Monorepo Build:** Mengatasi isu `module not found` pada Vercel dengan memastikan dependency terinstall di scope yang tepat.
